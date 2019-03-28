@@ -15,17 +15,7 @@ const createCollection = async (
                     'id',
                     'name',
                     'username',
-                    'email',
-                    'address.street',
-                    'address.suite',
-                    'address.city',
-                    'address.zipcode',
-                    'address.geo',
-                    'phone',
-                    'website',
-                    'company.name',
-                    'company.catchPhrase',
-                    'company.bs',
+                    'email'
                 ],
                 properties: {
                     id: {
