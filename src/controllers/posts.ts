@@ -25,6 +25,6 @@ export const postsProximity = async (req: Request, res: Response): Promise<Respo
     );
 
     return res.json({
-        data: posts,
+        data: await posts.toArray(),
     });
 };

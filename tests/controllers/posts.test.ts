@@ -2,7 +2,12 @@ import * as validation from 'express-validator/check';
 import { postsProximity } from '../../src/controllers/posts';
 import app from '../../src/app';
 
-jest.mock('../../src/repositories/posts', () => async (lat: number, lng: number) => ({ lat, lng }));
+jest.mock('../../src/repositories/posts', () => async (lat: number, lng: number) => ({
+    toArray: async () => ({
+        lat,
+        lng,
+    }),
+}));
 
 // @ts-ignore
 validation.validationResult = jest.fn(() => ({

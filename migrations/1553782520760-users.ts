@@ -15,7 +15,7 @@ const createCollection = async (
                     'id',
                     'name',
                     'username',
-                    'email'
+                    'email',
                 ],
                 properties: {
                     id: {
