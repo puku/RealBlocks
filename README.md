@@ -23,11 +23,11 @@ you can simply run following commands:
  make setup
 ```
 
-After everything is set you should be able to send `POST` request to the `http://localhost:3000/posts/proximity` url.
+After everything is set you should be able to send `POST` request to the `http://localhost:8080/posts/proximity` url.
 
 ##### Request example:
 ```
- curl -d '{"geo":{"lat":"-43.1234","lng":"-34.1234"}}' -H "Content-Type: application/json" -X POST http://localhost:3000/posts/proximity
+ curl -d '{"geo":{"lat":"-43.1234","lng":"-34.1234"}}' -H "Content-Type: application/json" -X POST http://localhost:8080/posts/proximity
 ```
 
 ##### Response example:
