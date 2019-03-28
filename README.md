@@ -1,6 +1,9 @@
 RealBlocks
 ==========
-> TODO: Add Badges
+[![Build Status](https://travis-ci.com/puku/RealBlocks.svg?branch=master)](https://travis-ci.com/puku/RealBlocks)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/puku/RealBlocks/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/puku/RealBlocks/?branch=master)
+[![Code Coverage](https://scrutinizer-ci.com/g/puku/RealBlocks/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/puku/RealBlocks/?branch=master)
+
 
 This repository contains test task for RealBlocks.
 
