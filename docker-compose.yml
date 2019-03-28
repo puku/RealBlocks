@@ -1,0 +1,23 @@
+version: '3'
+
+services:
+  web:
+    container_name: realblocks-web
+    build: .
+    volumes:
+      - .:/app
+      - /app/node_modules
+    environment:
+      NODE_ENV: ${NODE_ENV}
+    ports:
+      - 8080:${PORT}
+    depends_on:
+      - mongo
+
+  mongo:
+    container_name: realblocks-mongo
+    image: mongo
+    ports:
+      - 27017:27017
+    volumes:
+      - /data/db

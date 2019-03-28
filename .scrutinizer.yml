@@ -1,0 +1,18 @@
+checks:
+  javascript: true
+
+build:
+  environment:
+    node: v10.14.2
+  nodes:
+    analysis:
+      tests:
+        override:
+          - js-scrutinizer-run
+    coverage:
+      tests:
+        override:
+          - command: npm run test
+            coverage:
+              file: coverage/clover.xml
+              format: clover
